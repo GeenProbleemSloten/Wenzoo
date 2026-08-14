@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projectplanner voor uw nieuwe website | Wenzoo</title>
+  <meta name="description" content="Breng in enkele minuten uw wensen voor een nieuwe of vernieuwde website in kaart met de projectplanner van Wenzoo.">
+  <meta name="author" content="Wenzoo">
+  <link rel="canonical" href="https://www.wenzoo.nl/projectplanner.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Wenzoo">
+  <meta property="og:title" content="Projectplanner voor uw website | Wenzoo">
+  <meta property="og:description" content="Van eerste idee naar een helder projectoverzicht in vier korte stappen.">
+  <meta property="og:image" content="https://www.wenzoo.nl/images/logo/opengraph-1200x630.png">
+  <meta property="og:url" content="https://www.wenzoo.nl/projectplanner.html">
+  <link rel="icon" href="images/logo/wenzoo-favicon.ico?v=2" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260814-agency3">
+  <link rel="stylesheet" href="immersive.css?v=20260814-agency3">
+  <link rel="stylesheet" href="pages.css?v=20260814-agency3">
+  <link rel="stylesheet" href="planner.css?v=20260814-agency3">
+</head>
+<body class="immersive-preview subpage planner-page">
+  <a class="skip-link" href="#main-content">Ga direct naar de inhoud</a>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <div class="nav-bar" id="navBar">
+      <a href="index.html" class="brand" aria-label="Wenzoo, naar de homepage">
+        <picture class="brand-symbol" aria-hidden="true"><img src="images/logo/header-beeldmerk-transparant.png" alt="" width="292" height="273"></picture>
+        <picture class="brand-wordmark"><img src="images/logo/header-woordmerk-transparant.png" alt="Wenzoo, Premium Web Design" width="447" height="131"></picture>
+      </a>
+      <nav class="nav-links" aria-label="Hoofdnavigatie">
+        <a href="website-laten-maken.html">Diensten</a>
+        <a href="index.html#werkwijze">Werkwijze</a>
+        <a href="index.html#portfolio">Werk</a>
+        <a href="index.html#over-mij">Over mij</a>
+        <a href="projectplanner.html" class="is-active">Projectplanner</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="index.html#contact" class="btn btn-secondary btn-sm">Contact</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false" aria-controls="navBar"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero planner-hero" aria-labelledby="planner-title">
+      <div class="wrap">
+        <nav class="breadcrumb" aria-label="Kruimelpad"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Projectplanner</span></nav>
+        <span class="subpage-kicker">Uw website in beeld</span>
+        <h1 id="planner-title">Van eerste idee naar een helder projectoverzicht.</h1>
+        <p>Beantwoord vier korte stappen. Aan het einde krijgt u een overzicht dat u kunt bewaren en direct kunt meenemen naar het contactformulier.</p>
+        <ul class="planner-benefits" aria-label="Voordelen van de projectplanner">
+          <li>In ongeveer vier minuten ingevuld</li>
+          <li>Geen technische kennis nodig</li>
+          <li>Uw keuzes blijven in deze browser</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="planner-section" aria-labelledby="form-title">
+      <div class="wrap planner-layout">
+        <aside class="planner-side reveal" aria-label="Voortgang">
+          <span class="eyebrow">Projectplanner</span>
+          <h2 id="form-title">Vier stappen, één duidelijk begin.</h2>
+          <ol class="planner-steps" id="plannerSteps">
+            <li class="is-current" data-step-indicator="1"><span>1</span><div><strong>Type website</strong><small>Wat wilt u laten maken?</small></div></li>
+            <li data-step-indicator="2"><span>2</span><div><strong>Doel en inhoud</strong><small>Wat moet de website bereiken?</small></div></li>
+            <li data-step-indicator="3"><span>3</span><div><strong>Functies en planning</strong><small>Wat heeft u nodig?</small></div></li>
+            <li data-step-indicator="4"><span>4</span><div><strong>Uw gegevens</strong><small>Wie mogen we spreken?</small></div></li>
+          </ol>
+          <div class="planner-progress" aria-hidden="true"><span id="plannerProgress"></span></div>
+        </aside>
+
+        <div class="planner-card reveal">
+          <form id="projectPlannerForm" novalidate>
+            <div class="planner-step-panel is-active" data-step="1">
+              <div class="planner-question">
+                <span class="question-number">Stap 1 van 4</span>
+                <h2>Wat wilt u laten maken?</h2>
+                <p>Kies de situatie die het dichtst bij uw project ligt.</p>
+              </div>
+              <fieldset class="choice-grid">
+                <legend class="sr-only">Type website</legend>
+                <label class="choice-card"><input type="radio" name="projecttype" value="Een volledig nieuwe bedrijfswebsite" required><span class="choice-mark">A</span><strong>Nieuwe bedrijfswebsite</strong><small>Een professionele website vanaf de basis.</small></label>
+                <label class="choice-card"><input type="radio" name="projecttype" value="Een bestaande website vernieuwen"><span class="choice-mark">B</span><strong>Website vernieuwen</strong><small>Een nieuwe uitstraling, structuur of techniek.</small></label>
+                <label class="choice-card"><input type="radio" name="projecttype" value="Een portfolio of persoonlijke website"><span class="choice-mark">C</span><strong>Portfolio of persoonlijk</strong><small>Uw werk, ervaring of verhaal centraal.</small></label>
+                <label class="choice-card"><input type="radio" name="projecttype" value="Beheer, onderhoud of uitbreiding van een website"><span class="choice-mark">D</span><strong>Beheer of uitbreiding</strong><small>Hulp bij een bestaande website.</small></label>
+              </fieldset>
+              <p class="planner-error" data-step-error="1" role="alert"></p>
+            </div>
+
+            <div class="planner-step-panel" data-step="2" hidden>
+              <div class="planner-question">
+                <span class="question-number">Stap 2 van 4</span>
+                <h2>Wat moet de website voor u doen?</h2>
+                <p>Meerdere doelen kiezen mag. Voeg daarna kort toe wat bezoekers over u moeten weten.</p>
+              </div>
+              <fieldset class="check-grid">
+                <legend>Belangrijkste doelen</legend>
+                <label><input type="checkbox" name="doelen" value="Meer aanvragen of contactmomenten"><span>Meer aanvragen krijgen</span></label>
+                <label><input type="checkbox" name="doelen" value="Diensten of aanbod duidelijk uitleggen"><span>Aanbod duidelijk uitleggen</span></label>
+                <label><input type="checkbox" name="doelen" value="Werk, cases of ervaring laten zien"><span>Werk of ervaring tonen</span></label>
+                <label><input type="checkbox" name="doelen" value="Professioneler en betrouwbaarder overkomen"><span>Meer vertrouwen wekken</span></label>
+                <label><input type="checkbox" name="doelen" value="Beter gevonden worden in zoekmachines"><span>Beter gevonden worden</span></label>
+                <label><input type="checkbox" name="doelen" value="Informatie eenvoudig zelf kunnen beheren"><span>Zelf inhoud beheren</span></label>
+              </fieldset>
+              <div class="planner-field">
+                <label for="projectVerhaal">Vertel kort over uw bedrijf of idee <span>(optioneel)</span></label>
+                <textarea id="projectVerhaal" name="projectverhaal" rows="4" placeholder="Wat doet u, voor wie en wat maakt uw aanpak bijzonder?"></textarea>
+              </div>
+              <p class="planner-error" data-step-error="2" role="alert"></p>
+            </div>
+
+            <div class="planner-step-panel" data-step="3" hidden>
+              <div class="planner-question">
+                <span class="question-number">Stap 3 van 4</span>
+                <h2>Welke onderdelen passen bij uw plan?</h2>
+                <p>Dit is een eerste inventarisatie. De precieze invulling bespreken we later samen.</p>
+              </div>
+              <fieldset class="check-grid check-grid--features">
+                <legend>Gewenste functies</legend>
+                <label><input type="checkbox" name="functies" value="Contact- of aanvraagformulier"><span>Contact- of aanvraagformulier</span></label>
+                <label><input type="checkbox" name="functies" value="Portfolio, projecten of cases"><span>Portfolio of projecten</span></label>
+                <label><input type="checkbox" name="functies" value="Online afspraak of reservering"><span>Afspraak of reservering</span></label>
+                <label><input type="checkbox" name="functies" value="Meerdere talen"><span>Meerdere talen</span></label>
+                <label><input type="checkbox" name="functies" value="Nieuws, blog of kennisbank"><span>Blog of kennisbank</span></label>
+                <label><input type="checkbox" name="functies" value="Koppeling met een extern systeem"><span>Externe koppeling</span></label>
+              </fieldset>
+              <div class="planner-fields-row">
+                <div class="planner-field">
+                  <label for="paginaOmvang">Verwachte omvang</label>
+                  <select id="paginaOmvang" name="paginaomvang">
+                    <option value="Nog niet bekend">Nog niet bekend</option>
+                    <option value="Eén compacte pagina">Eén compacte pagina</option>
+                    <option value="Ongeveer 3 tot 5 pagina's">Ongeveer 3 tot 5 pagina's</option>
+                    <option value="Ongeveer 6 tot 10 pagina's">Ongeveer 6 tot 10 pagina's</option>
+                    <option value="Meer dan 10 pagina's">Meer dan 10 pagina's</option>
+                  </select>
+                </div>
+                <div class="planner-field">
+                  <label for="planning">Gewenste start</label>
+                  <select id="planning" name="planning">
+                    <option value="In overleg">In overleg</option>
+                    <option value="Zo snel mogelijk">Zo snel mogelijk</option>
+                    <option value="Binnen 1 tot 2 maanden">Binnen 1 tot 2 maanden</option>
+                    <option value="Binnen 2 tot 4 maanden">Binnen 2 tot 4 maanden</option>
+                    <option value="Later dit jaar">Later dit jaar</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="planner-step-panel" data-step="4" hidden>
+              <div class="planner-question">
+                <span class="question-number">Stap 4 van 4</span>
+                <h2>Wie hoort bij dit project?</h2>
+                <p>Deze gegevens worden alleen gebruikt om uw overzicht klaar te zetten voor het contactformulier.</p>
+              </div>
+              <div class="planner-fields-row">
+                <div class="planner-field"><label for="plannerNaam">Naam</label><input type="text" id="plannerNaam" name="naam" autocomplete="name" required placeholder="Uw naam"></div>
+                <div class="planner-field"><label for="plannerEmail">E-mail</label><input type="email" id="plannerEmail" name="email" autocomplete="email" required placeholder="naam@bedrijf.nl"></div>
+              </div>
+              <div class="planner-field"><label for="plannerTelefoon">Telefoon <span>(optioneel)</span></label><input type="tel" id="plannerTelefoon" name="telefoon" autocomplete="tel" placeholder="06 12 34 56 78"></div>
+              <div class="planner-field"><label for="opmerking">Wat wilt u verder meegeven? <span>(optioneel)</span></label><textarea id="opmerking" name="opmerking" rows="4" placeholder="Bijvoorbeeld een gewenste stijl, bestaande website of belangrijke deadline."></textarea></div>
+              <p class="planner-error" data-step-error="4" role="alert"></p>
+            </div>
+
+            <div class="planner-controls">
+              <button type="button" class="btn btn-secondary" id="plannerBack" hidden>Vorige stap</button>
+              <button type="button" class="btn btn-primary" id="plannerNext">Volgende stap</button>
+              <button type="submit" class="btn btn-primary" id="plannerFinish" hidden>Maak mijn overzicht</button>
+            </div>
+          </form>
+
+          <div class="planner-result" id="plannerResult" hidden aria-live="polite">
+            <span class="result-check" aria-hidden="true">✓</span>
+            <span class="subpage-kicker">Uw overzicht is klaar</span>
+            <h2>Een sterk begin voor ons gesprek.</h2>
+            <p>Controleer het overzicht hieronder. U kunt het bewaren of direct meenemen naar het contactformulier.</p>
+            <pre id="plannerSummary"></pre>
+            <div class="result-actions">
+              <button type="button" class="btn btn-secondary" id="copySummary">Kopieer overzicht</button>
+              <button type="button" class="btn btn-secondary" id="downloadSummary">Download als tekst</button>
+              <a href="index.html#contact" class="btn btn-primary" id="continueToContact">Verder naar contact</a>
+            </div>
+            <button type="button" class="planner-reset" id="plannerReset">Opnieuw beginnen</button>
+            <p class="copy-status" id="copyStatus" role="status"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap"><div class="footer-top"><div class="footer-brand"><a href="index.html" class="brand"><picture><source srcset="images/logo/volledig-logo-640w.webp" type="image/webp"><img class="footer-logo" src="images/logo/volledig-logo-640w.png" alt="Wenzoo" width="640" height="567"></picture></a><p class="footer-tagline">Websites op maat, persoonlijk ontworpen en zorgvuldig gebouwd.</p></div><div class="footer-col"><h4>Diensten</h4><ul><li><a href="website-laten-maken.html">Website laten maken</a></li><li><a href="website-vernieuwen.html">Website vernieuwen</a></li><li><a href="portfolio-website.html">Portfolio website</a></li><li><a href="website-beheer-onderhoud.html">Beheer en onderhoud</a></li></ul></div><div class="footer-col"><h4>Ontdekken</h4><ul><li><a href="project-geen-probleem-sloten.html">Project</a></li><li><a href="index.html#werkwijze">Werkwijze</a></li><li><a href="projectplanner.html">Projectplanner</a></li></ul></div><div class="footer-col"><h4>Bedrijf</h4><ul><li><a href="index.html#contact">Contact</a></li><li><a href="algemene-voorwaarden.html">Algemene voorwaarden</a></li><li><a href="privacyverklaring.html">Privacyverklaring</a></li></ul></div></div><div class="footer-bottom"><span>© 2026 Wenzoo. Alle rechten voorbehouden.</span></div></div></footer>
+
+  <script src="script.js?v=20260814-agency3"></script>
+  <script src="planner.js?v=20260814-agency3"></script>
+  <script src="three.min.js?v=20260813-2148"></script>
+  <script src="bg-3d.js?v=20260814-agency3"></script>
+</body>
+</html>
