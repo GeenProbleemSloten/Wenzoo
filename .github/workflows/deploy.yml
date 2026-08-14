@@ -20,5 +20,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local_path: './*'
-          remote_path: '/domains/noproblemsloten.nl/public_html/Wenzoo/'
+          remote_path: '/'
           sftp_only: true
